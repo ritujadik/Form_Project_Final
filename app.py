@@ -11,7 +11,7 @@ def index():
     return render_template('Form.html')
 @app.route("/submit_form",methods=['POST'])
 def submit_form():
-    FNAME = request.form.get('FNAME')
+    FNAME = request.form.get('NAME')
     LNAME = request.form.get('LNAME')
     email = request.form.get('email')
     password = request.form.get('password')
